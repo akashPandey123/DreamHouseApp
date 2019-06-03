@@ -11,6 +11,7 @@ Dreamhouse is a sample application for the real estate business built on the Sal
 
 ## Table of contents
 
+
 * [Installation instructions](#installation-instructions)
     * [Installing DreamHouse using Salesforce DX](#installing-dreamhouse-using-salesforce-dx)
     * [Installing DreamHouse using an unlocked package](#installing-dreamhouse-using-an-unlocked-package)
