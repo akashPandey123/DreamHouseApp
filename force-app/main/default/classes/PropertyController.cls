@@ -4,6 +4,7 @@ global with sharing class PropertyController {
     public static Property__c[] getPropertyList(String searchKey, Decimal minPrice, Decimal maxPrice, Integer numberBedrooms, Integer numberBathrooms, String visualSearchKey) {
         String key = '%' + searchKey + '%';
         String visualKey = '%' + visualSearchKey + '%';
+        System.debug('Test sfdx');
         return [SELECT Id, address__c, city__c, state__c, description__c, price__c, baths__c, beds__c, thumbnail__c, location__latitude__s, location__longitude__s FROM property__c
                       WHERE (title__c LIKE :key OR city__c LIKE :key OR tags__c LIKE :key)
                       AND (title__c LIKE :visualKey OR city__c LIKE :visualKey OR tags__c LIKE :visualKey)
