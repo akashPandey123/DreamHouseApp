@@ -9,4 +9,12 @@ public class TestingDx {
         insert ac;
         insert c;
     }
+    public static void addOpp(){
+        Opportunity op = new Opportunity();
+        op.Name = 'TestOpp';
+        op.StageName = 'Prospecting';
+        op.CloseDate = Date.today();
+        insert op;
+    }
+    
 }
